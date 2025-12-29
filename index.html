@@ -6,50 +6,7 @@
   概要: このファイルはカラフルなシングルページサイトのHTMLです。
   初心者向けにコメントを多く入れています。
 -->
-<!-- シンプルな単色背景と落ち着いた配色に修正 -->
-<style>
-  body {
-    background: #f5f5f5 !important;
-    min-height: 100vh;
-  }
-  .navbar {
-    background: #3b82f6 !important;
-    box-shadow: 0 2px 12px #cccccc76;
-  }
-  .nav-menu a {
-    color: #fff !important;
-    background: #60a5fa !important;
-    border-radius: 24px;
-    padding: 0.6em 1em;
-    font-weight: bold;
-    transition: .25s;
-  }
-  .nav-menu a:hover {
-    background: #2563eb !important;
-    color: #fff !important;
-    box-shadow: none;
-    text-shadow: none;
-  }
-  .logo span {
-    color: #3b82f6 !important;
-    font-family: sans-serif;
-  }
-  .hero {
-    background: #ffffff !important;
-  }
-  .cta-button, .submit-button {
-    background: #3b82f6 !important;
-    color: #fff !important;
-    border-radius: 22px;
-    font-weight: bold;
-    transition: background .22s;
-  }
-  .cta-button:hover, .submit-button:hover {
-    background: #2563eb !important;
-    box-shadow: none;
-    color: #fff !important;
-  }
-</style>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -60,32 +17,31 @@
     <!-- 外部CSSを読み込みます -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background: linear-gradient(135deg, #4285f4 0%, #ea4335 33%, #fbbc04 66%, #34a853 100%); min-height:100vh;">
+<body>
     <!-- ヘッダーセクション。ナビゲーションバーを含みます -->
     <header>
-        <nav class="navbar" style="background: linear-gradient(90deg, #4285f4 0%, #34a853 30%, #fbbc04 65%, #ea4335 100%); box-shadow: 0 4px 20px #e0e0e0;">
+        <nav class="navbar">
             <div class="container">
                 <!-- サイトのロゴ部分 -->
-                <div class="logo" 
-                  style="font-size:2.6rem; font-weight:900; letter-spacing: 1px; font-family:sans-serif;">
+                <div class="logo">
                   <!-- Googleカラー風のロゴ。各spanのcolorに注目 -->
-                  <span style="color:#4285f4;font-family:sans-serif;">F</span>
-                  <span style="color:#ea4335;font-family:sans-serif;">u</span>
-                  <span style="color:#fbbc04;font-family:sans-serif;">n</span>
-                  <span style="color:#34a853;font-family:sans-serif;">S</span>
-                  <span style="color:#4285f4;font-family:sans-serif;">i</span>
-                  <span style="color:#ea4335;font-family:sans-serif;">t</span>
-                  <span style="color:#fbbc04;font-family:sans-serif;">e</span>
-                  <span style="font-size:1.2em;vertical-align:middle;">🎈</span>
+                  <span>F</span>
+                  <span>u</span>
+                  <span>n</span>
+                  <span>S</span>
+                  <span>i</span>
+                  <span>t</span>
+                  <span>e</span>
+                  <span>🎈</span>
                 </div>
                 <!-- ナビゲーションメニュー -->
-                <ul class="nav-menu" style="display:flex;gap:1em;">
+                <ul class="nav-menu">
                     <!-- 各リンクはセクションにジャンプします -->
-                    <li><a href="#home" style="color:white;background:#4285f4;padding:0.6em 1em;border-radius:24px;font-weight:bold;transition:.3s;">ホーム</a></li>
-                    <li><a href="#about" style="color:white;background:#ea4335;padding:0.6em 1em;border-radius:24px;font-weight:bold;transition:.3s;">ワクワクについて</a></li>
-                    <li><a href="#services" style="color:white;background:#fbbc04;padding:0.6em 1em;border-radius:24px;font-weight:bold;transition:.3s;">楽しいサービス</a></li>
-                    <li><a href="#gallery" style="color:white;background:#34a853;padding:0.6em 1em;border-radius:24px;font-weight:bold;transition:.3s;">ギャラリー</a></li>
-                    <li><a href="#contact" style="color:white;background:#4285f4;padding:0.6em 1em;border-radius:24px;font-weight:bold;transition:.3s;">お問い合わせ</a></li>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">ワクワクについて</a></li>
+                    <li><a href="#services">楽しいサービス</a></li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </div>
         </nav>
@@ -96,258 +52,163 @@
           homeセクション: 一番上のヒーローバナー部分です。
           背景色やタイトル、キャッチコピーなどがあります。
         -->
-        <section id="home" class="hero" style="background:radial-gradient(circle at 70% 50%, #fbbc04 34%, #fff 100%); padding-top:3em;">
+        <section id="home" class="hero">
 
-            <div class="container" style="position:relative;">
-                <h1 class="hero-title bounce" style="font-size:2.5rem;font-family:sans-serif; font-weight:900;">
-                   <span style="color:#4285f4;">よ</span>
-                   <span style="color:#ea4335;">う</span>
-                   <span style="color:#fbbc04;">こ</span>
-                   <span style="color:#34a853;">そ</span>！🌟楽しいホームページ！🌟
+            <div class="container">
+                <h1 class="hero-title bounce">
+                   <span>よ</span>
+                   <span>う</span>
+                   <span>こ</span>
+                   <span>そ</span>！🌟楽しいホームページ！🌟
                 </h1>
-                <p class="hero-subtitle" style="font-size:1.5rem;font-weight:bold;letter-spacing:1px;">
-                  <span style="color:#4285f4;">ここ</span>は
-                  <span style="color:#fbbc04;">毎日</span>が
-                  <span style="color:#34a853;">もっと</span>
-                  <span style="color:#ea4335;">カラフル</span>になる場所です🎉
+                <p class="hero-subtitle">
+                  <span>ここ</span>は
+                  <span>毎日</span>が
+                  <span>もっと</span>
+                  <span>カラフル</span>になる場所です🎉
                 </p>
                 <button class="cta-button"
-                    style="font-size:1.2rem;background:linear-gradient(90deg,#4285f4 0%, #fbbc04 50%, #34a853 100%);border:none;color:white;border-radius:999px;padding:1em 2em;margin-top:1em;font-weight:bold;box-shadow:0 2px 10px #b3b3b3;transition:all .3s;letter-spacing:1px;"
                     onclick="window.scrollTo({top: document.getElementById('about').offsetTop, behavior: 'smooth'});">
-                    <span style="color:#ea4335;font-family:sans-serif;">ワクワクを始めよう！</span>
+                    <span>ワクワクを始めよう！</span>
                 </button>
-                <div class="emoji-party" aria-hidden="true" style="font-size:1.8rem;margin:1.3em 0;">
-                  <span style="filter: grayscale(0) hue-rotate(193deg);">🎉</span>
-                  <span style="filter: grayscale(0) hue-rotate(335deg);">🟦</span>
-                  <span style="filter: grayscale(0) hue-rotate(60deg);">🟡</span>
-                  <span style="filter: grayscale(0) hue-rotate(130deg);">🟩</span>
-                  <span style="filter: grayscale(0) hue-rotate(0deg);">🟥</span>
+                <div class="emoji-party" aria-hidden="true">
+                  <span>🎉</span>
+                  <span>🟦</span>
+                  <span>🟡</span>
+                  <span>🟩</span>
+                  <span>🟥</span>
                   <span>🌈</span>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about" style="background:linear-gradient(90deg, #ffffff 10%,#fbbc04 60%, #fff 100%);">
+        <section id="about" class="about">
             <div class="container">
-                <h2 class="about-fun-title" style="font-family:sans-serif;font-weight:900;">
-                  <span style="color:#4285f4;">楽</span>
-                  <span style="color:#ea4335;">し</span>
-                  <span style="color:#fbbc04;">い</span>
-                  <span style="color:#34a853;">っ</span>
-                  <span style="color:#4285f4;">て、</span>
-                  <span style="color:#ea4335;">最</span>
-                  <span style="color:#fbbc04;">高</span>
-                  <span style="color:#34a853;">！</span>
+                <h2 class="about-fun-title">
+                  <span>楽</span>
+                  <span>し</span>
+                  <span>い</span>
+                  <span>っ</span>
+                  <span>て、</span>
+                  <span>最</span>
+                  <span>高</span>
+                  <span>！</span>
                 </h2>
-                <div class="about-content fun-background" style="background:linear-gradient(135deg, #fffbee 50%, #fbbd2d 100%);border-radius:18px;padding:2em;box-shadow:0 4px 16px #fbbc0462;">
-                    <p style="font-size:1.12em;">
-                        <span style="color:#4285f4;font-weight:bold;">FunSite</span>は、みんなの日常をちょっぴり楽しくするために誕生しました！<br>
-                        <span style="color:#ea4335;">カラフルな</span>デザインや仕掛けで、<span style="color:#fbbc04;">毎日がウキウキ・ワクワクいっぱい</span>に🎈<br>
-                        <span class="sparkle" style="color:#34a853;font-weight:900;">一緒に、楽しい瞬間を作ろう✨</span>
+                <div class="about-content fun-background">
+                    <p>
+                        <span>FunSite</span>は、みんなの日常をちょっぴり楽しくするために誕生しました！<br>
+                        <span>カラフルな</span>デザインや仕掛けで、<span>毎日がウキウキ・ワクワクいっぱい</span>に🎈<br>
+                        <span class="sparkle">一緒に、楽しい瞬間を作ろう✨</span>
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services" style="background:linear-gradient(90deg,#fff 10%,#4285f4 60%, #fff 100%);">
+        <section id="services" class="services">
             <div class="container">
-                <h2 style="font-family:sans-serif;font-weight:900;">
-                  <span style="color:#ea4335;">楽</span>
-                  <span style="color:#fbbc04;">し</span>
-                  <span style="color:#34a853;">い</span>
-                  <span style="color:#4285f4;">サ</span>
-                  <span style="color:#ea4335;">ー</span>
-                  <span style="color:#fbbc04;">ビ</span>
-                  <span style="color:#34a853;">ス</span>
-                  <span style="color:#4285f4;">大</span>
-                  <span style="color:#ea4335;">集</span>
-                  <span style="color:#fbbc04;">合</span>
-                  <span style="color:#34a853;">！</span>
+                <h2>
+                  <span>楽</span>
+                  <span>し</span>
+                  <span>い</span>
+                  <span>サ</span>
+                  <span>ー</span>
+                  <span>ビ</span>
+                  <span>ス</span>
+                  <span>大</span>
+                  <span>集</span>
+                  <span>合</span>
+                  <span>！</span>
                 </h2>
-                <div class="services-grid" style="gap:2em;">
-                    <div class="service-card pop" style="background:#e3f2fd;border-radius:16px;box-shadow:0 2px 10px #b0c6fa92;">
-                        <div class="service-icon" style="font-size:2.2rem;color:#4285f4;">🎨</div>
-                        <h3 style="color:#4285f4;">カラフルデザイン</h3>
-                        <p style="color:#4285f4;">毎日がもっとハッピーに！ポップな色使いで気分もアップ♪</p>
+                <div class="services-grid">
+                    <div class="service-card pop">
+                        <div class="service-icon">🎨</div>
+                        <h3>カラフルデザイン</h3>
+                        <p>毎日がもっとハッピーに！ポップな色使いで気分もアップ♪</p>
                     </div>
-                    <div class="service-card pop" style="background:#ffe1e3;border-radius:16px;box-shadow:0 2px 10px #ea433576;">
-                        <div class="service-icon" style="font-size:2.2rem;color:#ea4335;">🧩</div>
-                        <h3 style="color:#ea4335;">おもしろミニゲーム</h3>
-                        <p style="color:#ea4335;">ちょっと休憩したいときに遊んでみてね！</p>
+                    <div class="service-card pop">
+                        <div class="service-icon">🧩</div>
+                        <h3>おもしろミニゲーム</h3>
+                        <p>ちょっと休憩したいときに遊んでみてね！</p>
                     </div>
-                    <div class="service-card pop" style="background:#fff5e1;border-radius:16px;box-shadow:0 2px 10px #fbbc0451;">
-                        <div class="service-icon" style="font-size:2.2rem;color:#fbbc04;">🎁</div>
-                        <h3 style="color:#fbbc04;">サプライズ機能</h3>
-                        <p style="color:#fbbc04;">サイトを探検すると…？秘密の仕掛けが見つかるかも！</p>
+                    <div class="service-card pop">
+                        <div class="service-icon">🎁</div>
+                        <h3>サプライズ機能</h3>
+                        <p>サイトを探検すると…？秘密の仕掛けが見つかるかも！</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" class="gallery" style="background:linear-gradient(90deg,#fff 10%,#34a853 70%, #fff 100%);padding-bottom:3em;">
+        <section id="gallery" class="gallery">
             <div class="container">
-                <h2 style="font-family:sans-serif;font-weight:900;">
-                  <span style="color:#4285f4;">楽</span>
-                  <span style="color:#fbbc04;">し</span>
-                  <span style="color:#ea4335;">い</span>
-                  <span style="color:#34a853;">ギャラリー</span>
+                <h2>
+                  <span>楽</span>
+                  <span>し</span>
+                  <span>い</span>
+                  <span>ギャラリー</span>
                 </h2>
-                <div class="gallery-grid" style="gap:22px;">
-                    <img src="https://placekitten.com/200/200" alt="にゃんこ" class="gallery-img spin" style="border:4px solid #4285f4;box-shadow:0 3px 18px #b0c6fa;border-radius:24px;">
-                    <img src="https://placebear.com/200/200" alt="くまさん" class="gallery-img spin" style="border:4px solid #ea4335;box-shadow:0 3px 18px #ea433555;border-radius:24px;">
-                    <img src="https://placebeard.it/200x200" alt="ひげおじさん" class="gallery-img spin" style="border:4px solid #fbbc04;box-shadow:0 3px 18px #fbbc0451;border-radius:24px;">
-                    <img src="https://place-puppy.com/200x200" alt="わんこ" class="gallery-img spin" style="border:4px solid #34a853;box-shadow:0 3px 18px #34a85352;border-radius:24px;">
+                <div class="gallery-grid">
+                    <img src="https://placekitten.com/200/200" alt="にゃんこ" class="gallery-img spin">
+                    <img src="https://placebear.com/200/200" alt="くまさん" class="gallery-img spin">
+                    <img src="https://placebeard.it/200x200" alt="ひげおじさん" class="gallery-img spin">
+                    <img src="https://place-puppy.com/200x200" alt="わんこ" class="gallery-img spin">
                 </div>
-                <div style="text-align:center;margin-top:1.5em;">
-                  <span style="font-size:2em;">
-                    <span style="color:#4285f4;">●</span>
-                    <span style="color:#ea4335;">●</span>
-                    <span style="color:#fbbc04;">●</span>
-                    <span style="color:#34a853;">●</span>
+                <div>
+                  <span>
+                    <span>●</span>
+                    <span>●</span>
+                    <span>●</span>
+                    <span>●</span>
                   </span>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact" style="background:linear-gradient(90deg,#fff 65%,#4285f4 100%);">
+        <section id="contact" class="contact">
             <div class="container">
-                <h2 style="font-family:sans-serif;font-weight:900;">
-                  <span style="color:#ea4335;">お</span>
-                  <span style="color:#4285f4;">問</span>
-                  <span style="color:#fbbc04;">い</span>
-                  <span style="color:#34a853;">合</span>
-                  <span style="color:#ea4335;">わ</span>
-                  <span style="color:#4285f4;">せ</span>
-                  <span style="color:#fbbc04;font-size:0.8em;">（お気軽に！）</span>
+                <h2>
+                  <span>お</span>
+                  <span>問</span>
+                  <span>い</span>
+                  <span>合</span>
+                  <span>わ</span>
+                  <span>せ</span>
+                  <span>（お気軽に！）</span>
                 </h2>
-                <form class="contact-form" style="background:linear-gradient(90deg,#fff 80%,#fbbc0444 100%);padding:2em;border-radius:16px;box-shadow:0 2px 16px #4285f449;">
-                    <div class="form-group" style="margin-bottom:1.2em;">
-                        <label for="name" style="color:#ea4335;font-weight:bold;">お名前🌟</label>
-                        <input type="text" id="name" name="name" placeholder="おなまえをどうぞ！"
-                          style="border:2px solid #4285f4;border-radius:7px;padding:0.7em;margin-top:0.3em;width:90%;background:rgba(234,243,252,0.98);font-size:1.08em;" required>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前🌟</label>
+                        <input type="text" id="name" name="name" placeholder="おなまえをどうぞ！" required>
                     </div>
-                    <div class="form-group" style="margin-bottom:1.2em;">
-                        <label for="email" style="color:#34a853;font-weight:bold;">メールアドレス🌈</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com"
-                          style="border:2px solid #34a853;border-radius:7px;padding:0.7em;margin-top:0.3em;width:90%;background:rgba(240,255,244,0.97);font-size:1.08em;" required>
+                    <div class="form-group">
+                        <label for="email">メールアドレス🌈</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
-                    <div class="form-group" style="margin-bottom:1.2em;">
-                        <label for="message" style="color:#fbbc04;font-weight:bold;">メッセージ🎶</label>
-                        <textarea id="message" name="message" rows="5" placeholder="なんでもどうぞ！"
-                          style="border:2px solid #faaf17;border-radius:9px;padding:0.7em;margin-top:0.3em;width:92%;background:rgba(255,251,234,0.94);font-size:1.08em;resize:vertical;" required></textarea>
+                    <div class="form-group">
+                        <label for="message">メッセージ🎶</label>
+                        <textarea id="message" name="message" rows="5" placeholder="なんでもどうぞ！" required></textarea>
                     </div>
-                    <button type="submit" class="submit-button bounce"
-                      style="font-size:1.15rem;background:linear-gradient(90deg,#ea4335 0%,#fbbc04 40%,#34a853 85%,#4285f4 100%);color:white;border:none;border-radius:999px;padding:0.8em 2em;font-weight:bold;box-shadow:0 2px 12px #e0e0e0;margin-top:0.6em;letter-spacing:1px;transition:all .3s;">
+                    <button type="submit" class="submit-button bounce">
                         送信！🚀
                     </button>
                 </form>
-                <div style="margin-top:1.2em;text-align:center;">
-                  <span style="font-size:1.4em;">
-                    <span style="color:#ea4335;">💬</span>
-                    <span style="color:#fbbc04;">📧</span>
-                    <span style="color:#4285f4;">📨</span>
-                    <span style="color:#34a853;">🤝</span>
+                <div>
+                  <span>
+                    <span>💬</span>
+                    <span>📧</span>
+                    <span>📨</span>
+                    <span>🤝</span>
                   </span>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="background:linear-gradient(90deg,#4285f4 0%,#ea4335 35%,#fbbc04 65%,#34a853 100%);padding:1.2em 0;">
+    <footer>
         <div class="container">
-            <p style="font-weight:bold;font-size:1.08em;color:white;text-shadow:0 1px 8px #00000033;">
-              <span style="font-size:1.3em;vertical-align:middle;">★</span>
-                &copy; 2024 <span style="font-family:sans-serif;">
-                  <span style="color:#4285f4;">F</span>
-                  <span style="color:#ea4335;">u</span>
-                  <span style="color:#fbbc04;">n</span>
-                  <span style="color:#34a853;">S</span>
-                  <span style="color:#4285f4;">i</span>
-                  <span style="color:#ea4335;">t</span>
-                  <span style="color:#fbbc04;">e</span>
-                </span>. みんなで楽しく！ 
-              <span style="margin-left:2em;font-size:1.1em;">
-                <span style="color:#4285f4;">●</span>
-                <span style="color:#ea4335;">●</span>
-                <span style="color:#fbbc04;">●</span>
-                <span style="color:#34a853;">●</span>
-              </span>
-            </p>
+            <p>copyright akame913 🐢</p>
         </div>
     </footer>
-
-    <audio id="bgm" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9e2c6d.mp3" loop autoplay hidden></audio>
-    <style>
-      /* ボタンやロゴのGoogleカラー hover */
-      .nav-menu a:hover {
-        background:#fff !important;
-        color:#4285f4 !important;
-        box-shadow:0 2px 9px #e3f2fd;
-        text-shadow:0 0 4px #4285f455;
-      }
-      .cta-button:hover, .submit-button:hover {
-        background:linear-gradient(90deg,#34a853 0%,#fbbc04 40%,#ea4335 85%,#4285f4 100%) !important;
-        color:#fff !important;
-        box-shadow:0 0 14px 2px #34a85341, 0 0 30px #fbbc0440;
-        transform:scale(1.06);
-        transition:all .25s;
-      }
-      .gallery-img:hover {
-         border-width:6px!important;
-         filter: brightness(1.07) contrast(1.11) drop-shadow(0 0 16px #4285f430);
-         box-shadow:0 0 35px 9px #fbbc0460;
-         transform:scale(1.1) rotate(7deg);
-         transition:all .35s;
-      }
-    </style>
-    <script>
-    // ギャラリー画像Googleカラーhover
-    document.querySelectorAll('.gallery-img').forEach((img, i) => {
-        const colorArr = ["#4285f4", "#ea4335", "#fbbc04", "#34a853"];
-        img.addEventListener('mouseover', () => {
-            img.style.borderColor = colorArr[i % 4];
-            img.style.boxShadow = `0 0 38px 7px ${colorArr[i % 4]}80`;
-            img.style.transform = 'scale(1.12) rotate(7deg)';
-        });
-        img.addEventListener('mouseleave', () => {
-            img.style.borderColor = colorArr[i % 4];
-            img.style.boxShadow = '';
-            img.style.transform = '';
-        });
-    });
-
-    // ボタンをGoogleカラーで光らせる
-    document.querySelectorAll('.cta-button, .submit-button').forEach(btn => {
-        btn.addEventListener('mouseover', () => {
-            btn.style.background = 'linear-gradient(90deg,#34a853 0%,#fbbc04 40%,#ea4335 85%,#4285f4 100%)';
-            btn.style.boxShadow = '0 0 14px 2px #34a85341, 0 0 25px #fbbc0440';
-            btn.style.color = '#fff';
-        });
-        btn.addEventListener('mouseleave', () => {
-            btn.style.background = 'linear-gradient(90deg,#4285f4 0%, #fbbc04 50%, #34a853 100%)';
-            btn.style.boxShadow = '';
-            btn.style.color = '#fff';
-        });
-    });
-
-    // 送信後のGoogleカラーのサプライズ
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const confetti = document.createElement('div');
-        confetti.innerHTML = 
-          '<span style="color:#4285f4;font-size:1.5em;">●</span> ' +
-          '<span style="color:#ea4335;font-size:1.5em;">●</span> ' +
-          '<span style="color:#fbbc04;font-size:1.5em;">●</span> ' +
-          '<span style="color:#34a853;font-size:1.5em;">●</span> ' +
-          'ありがとう！🎉';
-        confetti.setAttribute('style','font-size:1.5em;text-align:center;margin:1em 0;animation:pop 1.1s;');
-        this.parentNode.insertBefore(confetti, this.nextSibling);
-        setTimeout(()=>confetti.remove(),1450);
-        alert('メッセージを送ってくれてありがとう！🎉');
-        this.reset();
-    });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
-
